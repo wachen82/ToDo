@@ -6,10 +6,7 @@ import { getSubheading } from "./utils/getSubheading";
 
 function App() {
   const [isFormShown, setIsFormShown] = useState(false);
-  const [todos, setTodos] = useState([
-    { name: "Zapłacić rachunki", done: false, id: 1 },
-    { name: "Wyżucić śmieci", done: true, id: 2 },
-  ]);
+  const [todos, setTodos] = useState([]);
 
   function addItem(newTodoName) {
     setTodos((prevTodos) => [
